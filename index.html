@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edutime</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles\style.css" />
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <input type="checkbox" name="" id="nav" />
+  <body id="bdy">
+    <input type="checkbox" id="mode" />
+
+    <nav class="content" id="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Posts</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact me</a></li>
+      </ul>
+      <span>
+        <label for="nav">
+          <i class="fas fa-times"></i>
+        </label>
+      </span>
+    </nav>
+    <div class="nav">
+      <section class="ls">
+        <a href="#">edutime</a>
+      </section>
+      <section class="rs">
+        <span class="navbar"
+          ><label for="nav"><i class="far fa-bars"></i></label
+        ></span>
+        <span class="blog"><i class="fas fa-scroll"></i></span>
+        <span class="mode" onclick="ThemeChange()" id="themechanger"
+          ><label for="mode"><i class="fad fa-moon" id="md"></i></label
+        ></span>
+      </section>
+    </div>
+    <div class="head">
+      <div class="sec1">
+        Want to be a Full🧐 <br />
+        Stacked Student?😎
+        <p>We're here to help.</p>
+        <h6>
+          <a href="#pg2">Read more...</a>
+        </h6>
+      </div>
+      <div class="sec2">
+        <img src="hands.png" alt="" />
+      </div>
+    </div>
+    <div class="page-2" id="pg2">
+      <div class="h">
+        From helping you get your Ambition💡 <br />
+        To you living it⚡!
+        <p>We're always here.</p>
+      </div>
+      <div class="cards">
+        <div class="c card-1">
+          <div class="img">
+            <img src="c1.png" alt="" />
+          </div>
+          Entreprenuership
+        </div>
+        <div class="c card-2">
+          <div class="img">
+            <img src="c2.png" alt="" />
+          </div>
+          Science
+        </div>
+        <div class="c card-3">
+          <div class="img">
+            <img src="c3.png" alt="" />
+          </div>
+          Maths
+        </div>
+      </div>
+      <div class="wry">Don't worry... there is more🤩!</div>
+    </div>
+    <div class="join">
+      <a href="">Join this Journey😃!</a>
+    </div>
+    <footer>
+      No Copyrights✌️ feel free to copy or share this content as much as
+      possible👍!
+      <a href="#"> Help this site grow by sponsoring</a> edutime in almost
+      2021😜!
+    </footer>
+    <script>
+        var body = document.getElementById('bdy');
+        var themechange = document.getElementById('themechanger');
+        var mode = document.getElementById('md');
+        function ThemeChange(){
+            if(body.classList.contains('bd')){
+                body.classList.remove('bd');
+                mode.classList.add('fa-moon')
+                mode.classList.remove('fa-sun')
+                mode.style.color = 'rgb(47, 47, 163)';
+            }
+            else{
+                body.classList.add('bd');
+                mode.classList.remove('fa-moon')
+                mode.classList.add('fa-sun')
+                mode.style.color = '#b2becd';
+                mode.style.cursor = 'pointer'
+            }
+        }
+    </script>
+  </body>
+</html>
