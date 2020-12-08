@@ -224,6 +224,10 @@ div.nav {
       &:hover {
         font-size: 35px;
       }
+      a{
+        text-decoration: none;
+        color: orange;
+      }
     }
     span.mode {
       color: rgb(47, 47, 163);
