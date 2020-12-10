@@ -9,8 +9,8 @@
 
 .bd {
   background: #000;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 ::-webkit-scrollbar {
@@ -75,6 +75,10 @@ input[type="checkbox"] {
 
 #mode:checked ~ .head .sec1 {
   background: #000;
+  color: #fff;
+}
+
+#mode:checked ~ .head .sec1 h6 a {
   color: #fff;
 }
 
@@ -319,8 +323,8 @@ div.nav .rs span.navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .head .sec1 {
