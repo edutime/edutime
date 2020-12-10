@@ -104,6 +104,9 @@ input[type="checkbox"] {
   &:checked ~ footer {
     background: rgb(65, 65, 65);
   }
+  &:checked ~ ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
 }
 
 .content {
