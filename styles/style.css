@@ -290,6 +290,11 @@ div.nav .rs span.blog:hover {
   font-size: 35px;
 }
 
+div.nav .rs span.blog a {
+  text-decoration: none;
+  color: orange;
+}
+
 div.nav .rs span.mode {
   color: #2f2fa3;
   cursor: pointer;
