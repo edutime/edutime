@@ -78,7 +78,7 @@ input[type="checkbox"] {
   color: #fff;
 }
 
-#mode:checked ~ .head .sec1 h6 a {
+#mode:checked ~ #op {
   color: #fff;
 }
 
