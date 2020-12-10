@@ -9,15 +9,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles\style.css" />
+    <link rel="stylesheet" href="assets\styles\homepage\style.css" />
     <link
       rel="stylesheet"
       href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
   </head>
   <input type="checkbox" name="" id="nav" />
   <body id="bdy">
@@ -61,7 +61,7 @@
         </h6>
       </div>
       <div class="sec2">
-        <img src="hands.png" alt="" />
+        <img src="assets/images/hands.png" alt="" />
       </div>
     </div>
     <div class="page-2" id="pg2">
@@ -73,19 +73,19 @@
       <div class="cards">
         <div class="c card-1">
           <div class="img">
-            <img src="c1.png" alt="" />
+            <img src="assets/images/c1.png" alt="" />
           </div>
           Entreprenuership
         </div>
         <div class="c card-2">
           <div class="img">
-            <img src="c2.png" alt="" />
+            <img src="assets/images/c2.png" alt="" />
           </div>
           Science
         </div>
         <div class="c card-3">
           <div class="img">
-            <img src="c3.png" alt="" />
+            <img src="assets/images/c3.png" alt="" />
           </div>
           Maths
         </div>

@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.bd {
+  background: #000;
+  transition: 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+}
+::-webkit-scrollbar-button {
+  width: 19px;
+  height: 19px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(207, 207, 207);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#nav:checked ~ nav.content {
+  top: 0;
+}
+#nav:checked ~ div.nav .ls a {
+  color: #fff;
+}
+.content {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(45deg, #9e4dff, #e9ccf8);
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  top: -150%;
+  transition: 1s ease;
+  z-index: 3;
+  i {
+    padding-top: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+    &:before {
+      margin-right: 10px;
+      margin-top: 10px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  color: rgb(255, 115, 0);
+
+  ul {
+    list-style: none;
+    display: block;
+    flex-direction: row;
+    align-self: center;
+    padding-left: 5px;
+    li {
+      color: white;
+      border-radius: 20px;
+      width: 100%;
+      transition: 0.3s ease;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        border-radius: 20px;
+        width: 700px;
+        padding: 0 20px;
+        transition: 0.2s ease;
+        &:hover {
+          color: rgb(220, 174, 227);
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+div.nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: 0.3s ease;
+  .ls {
+    font-size: 30px;
+    line-height: 70px;
+    padding-top: 5px;
+    width: 50%;
+    padding-left: 30px;
+    a {
+      text-decoration: none;
+      color: black;
+      position: relative;
+      transition: 0.3s ease;
+      padding: 10px;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, #9e4dff, #e9ccf8);
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: 0.3s ease;
+        border-radius: 3px;
+        height: 5px;
+        width: 85%;
+      }
+      &:hover::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+  .rs {
+    width: 50%;
+    font-size: 27px;
+    padding: 20px 20px 0 0;
+    span {
+      float: right;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+      justify-content: center;
+      margin-left: 0px;
+      cursor: pointer;
+      &:hover {
+        font-size: 35px;
+        cursor: pointer;
+        label i {
+          &:hover::before {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    span.blog {
+      font-size: 22px;
+      color: orange;
+      &:hover {
+        font-size: 35px;
+      }
+      a {
+        text-decoration: none;
+        color: orange;
+      }
+    }
+    span.mode {
+      color: rgb(47, 47, 163);
+      cursor: pointer;
+    }
+    span.navbar {
+      color: #646464;
+      cursor: pointer;
+    }
+  }
+}
+#mode {
+  &:checked ~ .content {
+    background: rgb(68, 68, 68);
+  }
+  &:checked ~ .content ul li a:hover {
+    color: #000;
+  }
+  &:checked ~ .nav .ls a:before {
+    background: #fff;
+  }
+  &:checked ~ .nav {
+    background: #000;
+  }
+  &:checked ~ .nav .ls a {
+    color: #fff;
+  }
+  &:checked ~ footer {
+    background: rgb(65, 65, 65);
+  }
+}
+footer {
+  background: rgb(224, 224, 224);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 30px;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 392px) {
+  .content {
+    font-size: 15px;
+  }
+  .rs {
+    span {
+      font-size: 25px;
+    }
+    span.blog {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 860px) {
+  body {
+    overflow-x: hidden;
+  }
+}
