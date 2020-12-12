@@ -1,0 +1,25 @@
+.error {
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    width: 50%;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+}
+#mode {
+  &:checked ~ .error {
+    color: #fff;
+  }
+}
+@media (max-width:1000px){
+    .error{
+        img{
+            width: 75%;
+        }
+    }
+}

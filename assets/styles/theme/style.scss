@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .bd {
   background: #000;
   transition: 0.3s ease;
@@ -197,6 +201,7 @@ div.nav {
   &:checked ~ footer {
     background: rgb(65, 65, 65);
   }
+  
 }
 footer {
   background: rgb(224, 224, 224);
@@ -213,6 +218,7 @@ footer {
     text-decoration: none;
   }
 }
+
 
 @media (max-width: 392px) {
   .content {

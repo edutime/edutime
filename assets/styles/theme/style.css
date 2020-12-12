@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .bd {
   background: #000;
   -webkit-transition: 0.3s ease;
@@ -253,6 +257,10 @@ div.nav .rs span.navbar {
 
 #mode:checked ~ footer {
   background: #414141;
+}
+
+#mode:checked ~ .error {
+  color: #fff;
 }
 
 footer {
