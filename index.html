@@ -14,9 +14,36 @@
       rel="stylesheet"
       href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M6MQN5TDQQ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-M6MQN5TDQQ");
+    </script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon//favicon-16x16.png"
+    />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
   </head>
   <input type="checkbox" name="" id="nav" />
@@ -29,7 +56,6 @@
         <li><a href="https://eduti.me/posts">Posts</a></li>
         <li><a href="https://eduti.me/about">About</a></li>
         <li><a href="https://eduti.me/contact">Contact</a></li>
-
       </ul>
       <span>
         <label for="nav">
@@ -45,7 +71,9 @@
         <span class="navbar"
           ><label for="nav"><i class="far fa-bars"></i></label
         ></span>
-        <span class="blog"><a href="https://eduti.me/posts"><i class="fas fa-scroll"></i></a></span>
+        <span class="blog"
+          ><a href="https://eduti.me/posts"><i class="fas fa-scroll"></i></a
+        ></span>
         <span class="mode" onclick="ThemeChange()" id="themechanger"
           ><label for="mode"><i class="fad fa-moon" id="md"></i></label
         ></span>
@@ -102,24 +130,23 @@
       2021😜!
     </footer>
     <script>
-        var body = document.getElementById('bdy');
-        var themechange = document.getElementById('themechanger');
-        var mode = document.getElementById('md');
-        function ThemeChange(){
-            if(body.classList.contains('bd')){
-                body.classList.remove('bd');
-                mode.classList.add('fa-moon')
-                mode.classList.remove('fa-sun')
-                mode.style.color = 'rgb(47, 47, 163)';
-            }
-            else{
-                body.classList.add('bd');
-                mode.classList.remove('fa-moon')
-                mode.classList.add('fa-sun')
-                mode.style.color = '#b2becd';
-                mode.style.cursor = 'pointer'
-            }
+      var body = document.getElementById("bdy");
+      var themechange = document.getElementById("themechanger");
+      var mode = document.getElementById("md");
+      function ThemeChange() {
+        if (body.classList.contains("bd")) {
+          body.classList.remove("bd");
+          mode.classList.add("fa-moon");
+          mode.classList.remove("fa-sun");
+          mode.style.color = "rgb(47, 47, 163)";
+        } else {
+          body.classList.add("bd");
+          mode.classList.remove("fa-moon");
+          mode.classList.add("fa-sun");
+          mode.style.color = "#b2becd";
+          mode.style.cursor = "pointer";
         }
+      }
     </script>
   </body>
 </html>
