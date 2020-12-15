@@ -259,10 +259,6 @@ div.nav .rs span.navbar {
   background: #414141;
 }
 
-#mode:checked ~ .error {
-  color: #fff;
-}
-
 footer {
   background: #e0e0e0;
   color: #fff;
