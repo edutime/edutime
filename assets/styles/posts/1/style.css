@@ -20,6 +20,10 @@
   padding: 20px 5% 20px 0;
 }
 
+#mode:checked ~ .page-content {
+  color: #fff;
+}
+
 .content ul li a:hover {
   color: linear-gradient(45deg, #9e4dff, #e9ccf8);
 }
