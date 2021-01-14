@@ -7,4 +7,8 @@
   margin-top: 20px;
   font-size: 20px;
 }
+
+#mode:checked ~ .page-content {
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
